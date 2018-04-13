@@ -1,0 +1,199 @@
+$mainFont-Family: 'Open Sans', sans-serif;
+$primaryColor: #517A52;
+$secondaryColor: #FF5109;
+$tertiaryColor: #517A52;
+$quaternaryColor: white;
+
+@mixin mainBtn {
+  width: 145px;
+  height: 38px;
+  font-family: $mainFont-Family;
+  font-size: 14px;
+  color: $quaternaryColor;
+  background-color: $secondaryColor;
+  border: none;
+  border-radius: 6px;
+}
+
+@mixin bodyText {
+  font-family: $mainFont-Family;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1030;
+}
+
+.headerBar {
+  width: 100vw;
+  height: 12vh;
+}
+
+.headerBarBackground {
+  background-color: $primaryColor;
+}
+
+.logoSize {
+  width: 63vw;
+  height: 7vh;
+  margin: 0.9em;
+  float: left;
+}
+
+.logo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $quaternaryColor;
+}
+
+/*Menu button*/
+.buttonPosition {
+  margin: 1em 0.55em;
+  float: right;
+}
+
+.btn {
+  padding: 0.5em 0.8em;
+  border-radius: 7px;
+}
+
+.btnMenu {
+  font-family: $mainFont-Family;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: $quaternaryColor;
+  background-color: transparent;
+  border: 2px solid $quaternaryColor;
+}
+
+/*Nav*/
+.menu {
+  display: none;
+  list-style-type: none;
+  text-align: center;
+}
+
+.menuSize {
+  width: 100vw;
+}
+
+.menuItem {
+  background-color: $primaryColor;
+  border-top: 1px solid $quaternaryColor;
+}
+
+.menuItemSize {
+  padding: 0.75em;
+}
+
+.menuItemLink {
+  text-decoration: none;
+  font-family: $mainFont-Family;
+  font-size: 17px;
+  color: $quaternaryColor;
+}
+
+.menuItemLinkClick {
+  padding: 0.7em 4.9em;
+}
+
+/*Main*/
+/*Feature Content*/
+.mainContainer {
+  // width: 100vw;
+  // position: relative;
+}
+
+.backgroundImg {
+  background-image: url(../img/leaf-bush.png);
+  background-size: cover;
+  background-position: right bottom;
+}
+
+.backgroundImgSize{
+  height: 100vh;
+}
+
+.row1 {
+  width: 100vw;
+  position: relative;
+}
+
+.rowContent {
+  position: absolute;
+  top: 32%;
+  right: 10%;
+  width: 80%;
+}
+
+.rowHeading {
+  font-family: $mainFont-Family;
+  font-size: 26px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color:$quaternaryColor;
+}
+
+.row1HeadingSize {
+  width: 100%;
+}
+
+.JoinBtnPosition {
+  margin: 27px auto 0 auto;
+  width: 145px;
+}
+
+.btnJoinNow {
+  @include mainBtn;
+}
+
+.row2 {
+  width: 100vw;
+}
+
+.blurbContainer {
+  width: 258px;
+  margin: 24px auto;
+}
+
+.bodyText {
+  @include bodyText;
+}
+
+.img {
+  height: 250px;
+  width: 250px;
+}
+
+.featureImg2 {
+  display: none;
+  background-image: url(../img/walking.png);
+  background-position:center;
+  background-size: cover;
+}
+
+.footer {
+  width: 100vw;
+  padding: 26px 20px;
+  margin-top: 5%;
+  background-color: $primaryColor;
+}
+
+.copyright {
+  font-family: $mainFont-Family;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: $quaternaryColor;
+}
