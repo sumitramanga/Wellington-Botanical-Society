@@ -3,11 +3,12 @@
   margin: 0;
   box-sizing: border-box; }
 
-.nav {
+.header {
   position: fixed;
   z-index: 1030; }
 
 .headerBar {
+  position: relative;
   width: 100vw;
   height: 12vh; }
 
@@ -15,9 +16,9 @@
   background-color: #517A52; }
 
 .logoSize {
-  width: 63vw;
-  height: 7vh;
-  margin: 0.9em;
+  position: absolute;
+  top: 22%;
+  width: 225px;
   float: left; }
 
 .logo {
@@ -29,7 +30,10 @@
 
 /*Menu button*/
 .buttonPosition {
-  margin: 1em 0.55em;
+  position: absolute;
+  top: 22%;
+  right: 5%;
+  width: 62px;
   float: right; }
 
 .btn {
@@ -114,10 +118,7 @@
   border: none;
   border-radius: 6px; }
 
-.row2 {
-  width: 100vw; }
-
-.blurbContainer {
+.textBlurb {
   width: 258px;
   margin: 24px auto; }
 
@@ -126,15 +127,8 @@
   font-size: 16px;
   font-weight: 300; }
 
-.img {
-  height: 250px;
-  width: 250px; }
-
-.featureImg2 {
-  display: none;
-  background-image: url(../img/walking.png);
-  background-position: center;
-  background-size: cover; }
+.featureImg2Wrapper {
+  display: none; }
 
 .footer {
   width: 100vw;
@@ -148,5 +142,113 @@
   font-weight: 300;
   text-align: center;
   color: white; }
+
+@media only screen and (min-width: 768px) {
+  .headerBar {
+    height: 11vh; }
+
+  .logoSize {
+    top: 26%;
+    left: 5%;
+    width: 241px; }
+
+  .logo {
+    font-size: 24px; }
+
+  .buttonPosition {
+    top: 34%;
+    width: 99px; }
+
+  .btn {
+    padding: 0.6em 1.2em; }
+
+  .btnMenu {
+    font-size: 16px; }
+
+  .menuItemSize {
+    padding: 1.05em; }
+
+  .imgOpacity {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; }
+
+  .backgroundImgSize {
+    height: 63vh; }
+
+  .card {
+    width: 768px;
+    height: 379px;
+    margin: auto; }
+
+  .rowContent {
+    top: 39%;
+    right: 21%;
+    width: 57%; }
+
+  .rowHeading {
+    font-size: 30px; }
+
+  .blurbContainer {
+    float: left; }
+
+  .textBlurb {
+    width: 385px;
+    padding: 38px;
+    margin: 21px 0; }
+
+  .featureImg2Wrapper {
+    display: block;
+    float: right; }
+
+  .featureImg2 {
+    height: 379px;
+    width: 379px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/walking.png); }
+
+  .footer {
+    padding: 31px 20px;
+    margin: 0; } }
+/*Tablet query ends**/
+@media only screen and (min-width: 1920px) {
+  .logoSize {
+    top: 33%;
+    left: 42%;
+    width: 14%; }
+
+  .buttonPosition {
+    display: none; }
+
+  .menu {
+    display: block;
+    background-color: #517A52; }
+
+  .menuItem {
+    display: inline-block;
+    border: none; }
+
+  .menuItemLinkClick {
+    padding: 0; }
+
+  .rowContent {
+    right: 36%;
+    width: 29%; }
+
+  .rowHeading {
+    font-size: 40px; }
+
+  .backgroundImgSize {
+    height: 100vh; }
+
+  .card {
+    width: 826px;
+    height: 439px;
+    border: 4px solid grey;
+    overflow: auto;
+    padding: 27px;
+    margin: 26px auto; } }
 
 /*# sourceMappingURL=style.css.map */
