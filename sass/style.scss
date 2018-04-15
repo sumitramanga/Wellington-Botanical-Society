@@ -22,10 +22,19 @@ $quaternaryColor: white;
 }
 
 @mixin imgSettings {
-  height: 379px;
-  width: 379px;
   background-position:center;
   background-size: cover;
+}
+
+@mixin tabletImgSize{
+  height: 379px;
+  width: 379px;
+}
+
+@mixin message {
+  font-family: $mainFont-Family;
+  font-size: 17px;
+  font-weight: 300;
 }
 
 * {
@@ -120,10 +129,6 @@ $quaternaryColor: white;
 
 /*Main*/
 /*Feature Content*/
-.mainContainer {
-  // width: 100vw;
-  // position: relative;
-}
 
 .backgroundImg {
   background-image: url(../img/leaf-bush.png);
@@ -165,13 +170,9 @@ $quaternaryColor: white;
   width: 145px;
 }
 
-.btnJoinNow {
+.btnPrimary {
   @include mainBtn;
 }
-
-// .row2 {
-//   width: 100vw;
-// }
 
 .textBlurb {
   width: 258px;
@@ -180,13 +181,6 @@ $quaternaryColor: white;
 
 .bodyText {
   @include bodyText;
-}
-
-.img {
-  // height: 250px;
-  // width: 250px;
-  // background-position:center;
-  // background-size: cover;
 }
 
 .featureImg2Wrapper {
@@ -207,6 +201,87 @@ $quaternaryColor: white;
   text-align: center;
   color: $quaternaryColor;
 }
+
+/*Our Mission*/
+
+.filler {
+  background-color: white;
+  height: 11vh;
+}
+
+.heading {
+  position: relative;
+  width: 100vw;
+  height: 20vh;
+  margin-bottom: 9%;
+  background-color: #629462;
+}
+
+.h2 {
+  padding: 11%;
+  font-family: $mainFont-Family;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+}
+
+.h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+}
+
+.ourMissionH3 {
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.imgStaff {
+  @include imgSettings;
+  background-image: url(../img/lara-and-leon.png);
+}
+
+.imgBoxSize {
+  width: 82vw;
+  height: 44vh;
+  margin: 0 auto;
+}
+
+.imgRata {
+  @include imgSettings;
+  background-image: url(../img/Rata.png);
+}
+
+/*Field Trips*/
+
+.tripMesssage {
+  display: none;
+}
+
+.tripsH3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.map {
+  width: 264px;
+  margin: 0 auto;
+}
+
+.tripDetails {
+  margin: 0 34px 22px 34px;
+}
+
+.attendButtonWrapper {
+  margin: 34px 67px;
+  text-align: center;
+}
+.attendBtn {
+  padding: 9px 39px;
+  text-decoration: none;
+}
+
 
 @media only screen and (min-width: 768px) {
 
@@ -274,8 +349,11 @@ $quaternaryColor: white;
 
   .textBlurb {
     width: 385px;
-    padding: 38px;
     margin: 21px 0;
+  }
+
+  .homeText {
+    padding: 38px;
   }
 
   .featureImg2Wrapper {
@@ -288,16 +366,80 @@ $quaternaryColor: white;
     background-image: url(../img/walking.png);
   }
 
+  .boxImg {
+    @include tabletImgSize;
+  }
+
   .footer {
     padding: 31px 20px;
     margin: 0;
   }
+
+  /*Our Mission*/
+  .heading {
+    height: 12vh;
+    margin-bottom: 0;
+  }
+  .h2 {
+    padding: 6%
+  }
+
+  .imgStaffWrapper {
+    @include tabletImgSize;
+    float: left;
+  }
+
+  .card1Text {
+    float: right;
+    padding: 32px 70px;
+  }
+
+  .card2Text {
+    padding:  81px 76px ;
+  }
+
+  .imgRataWrapper {
+    @include tabletImgSize;
+    float: right;
+  }
+
+  /*Field Trips*/
+  .tripMesssage {
+    @include message;
+    display: block;
+    margin: 56px 130px;
+  }
+
+  .floatRightTrips {
+    width: 263px;
+    float: right;
+  }
+
+  .tripCard {
+    width: 586px;
+    height: 316px;
+    margin: 35px auto;
+  }
+
+  .tripDetails {
+    width: 240px;
+  }
+
+  .map {
+    height: 249px;
+    width: 256px;
+  }
+
+  .attendButtonWrapper {
+      margin: 49px 0;
+  }
+
 }/*Tablet query ends**/
 
 @media only screen and (min-width: 1920px) {
 
   .headerBar {
-    // background-color: $quaternaryColor;
+    background-color: $quaternaryColor;
   }
 
   .logoSize {
@@ -307,7 +449,7 @@ $quaternaryColor: white;
   }
 
   .logo {
-    // color: $primaryColor;
+    color: $primaryColor;
   }
 
   .buttonPosition {
@@ -344,7 +486,7 @@ $quaternaryColor: white;
 
   .card {
     width: 826px;
-    height: 439px;
+    height: 441px;
     border: 4px solid grey;
     overflow: auto;
     padding: 27px;
