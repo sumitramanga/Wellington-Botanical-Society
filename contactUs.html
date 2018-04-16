@@ -41,65 +41,102 @@
         <div class="filler"></div>
 
         <div class="heading">
-          <h2 class="h2">Meetings</h2>
+          <h2 class="h2">Contact Us</h2>
         </div>
 
-        <div class="leftContent tripMessageWrapper">
-          <div class="contactBGImg leftBGImg" title="Rata Tree">
-            <div class="imgOpacity"></div>
-            <div class="tripMessage message messagePosition messageBorder">
-              <p class="tripMesssageText">If you would like any help on identifying plants or have any general enquiries in regards to upcoming meetings and field trips, membership information, award information or anything else please feel free to contact us. To stay up to date with Wellington Botanical Society and chat among the community with others join our Facebook group full of diverse inidividuals!</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="rightContent">
-          <div class="tripCard tripCard1 meetingCard1">
-            <div class="blurbContainer">
-              <div class="tripDetails trip1Text">
-                <h3 class="h3 tripsH3">Flora of NZ’s & Australia’s Sub-Antarctic Islands</h3>
-                <p class= "bodyText">
-                  <strong>Date: </strong>16/04/2018<br>
-                  <strong>Time: </strong>7:30PM<br>
-                  <strong>Details: </strong>Join Alex for an introduction to some of the remarkable elements of the flora of the Australasian sub-Antarctic islands. The results of four journeys in the 2017/2018 summer will also structure the evening.
-                </p>
-              </div>
-            </div>
-
-            <div class="floatRightTrips">
-              <div class="mapWrapper">
-                <div class="map map1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4370.898142604676!2d174.76341697463675!3d-41.2871351456655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b02eb229c7ef%3A0xb0c5b108cc7d080d!2sMurphy+Building+Kelburn+Parade%2C+Kelburn%2C+Wellington+6012!5e0!3m2!1sen!2snz!4v1523849811226" width="259" height="216" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        <div class="contactContainer">
+          <div class="leftContactContent leftContent contactMessageWrapper">
+            <div class="contactBGImg leftBGImg" title="Rata Tree">
+              <div class="imgOpacity"></div>
+              <div class="message messagePosition messageBorder">
+                <p class="bodyText">If you would like any help on identifying plants or have any general enquiries in regards to upcoming meetings and field trips, membership information, award information or anything else please feel free to contact us. To stay up to date with Wellington Botanical Society and chat among the community with others join our Facebook group full of diverse inidividuals!</p>
               </div>
             </div>
           </div>
 
-          <div class="tripCard tripCard2">
-            <div class="blurbContainer">
-              <div class="tripDetails trip1Text">
-                <h3 class="h3 tripsH3">Members’ evening</h3>
-                <p class= "bodyText">
-                  <strong>Date: </strong>15/05/2018<br>
-                  <strong>Time: </strong>7:30PM<br>
-                  <strong>Details: </strong>Share your botanical slides and photographs taken on BotSoc trips. Also help build up the Jubilee Award Fund which is used to support research on NZ plants by giving a gold-coin koha, folding money’ or buy one or more books we put on display.
+          <div class="rightContactContent rightContent">
+            <div class="waysOfContact">
+              <div class="contact mailContact">
+                <div class="icon mailIconWrapper">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <p class= "bodyText contactText">
+                  <strong>Wellington Botanical Society</strong><br>
+                  PO Box 10-412<br>
+                  Wellington 6143<br>
+                  New Zealand<br>
                 </p>
               </div>
+
+              <div class="contact emailContact">
+                <div class="icon emailIconWrapper">
+                  <i class="fas fa-at"></i>
+                </div>
+                <p class="bodyText contactText">
+                  rockwren19@gmail.com
+                </p>
+              </div>
+
+              <div class="contact phoneContact">
+                <div class="icon phoneIconWrapper">
+                  <i class="fas fa-phone fa-flip-horizontal"></i>
+                </div>
+                <p class="bodyText contactText">
+                  021 112 8841
+                </p>
+              </div>
+
+              <div class="contact fbContact">
+                <div class="icon">
+                  <i class="fab fa-facebook"></i>
+                </div>
+                <p class="bodyText contactText">
+                  Wild Plants of Wellington
+                </p>
+              </div>
+
+              <hr>
             </div>
 
             <div class="floatRightTrips">
-              <div class="mapWrapper">
-                <div class="map map1"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4370.898142604676!2d174.76341697463675!3d-41.2871351456655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b02eb229c7ef%3A0xb0c5b108cc7d080d!2sMurphy+Building+Kelburn+Parade%2C+Kelburn%2C+Wellington+6012!5e0!3m2!1sen!2snz!4v1523849811226" width="259" height="216" frameborder="0" style="border:0" allowfullscreen></iframe></div>
-              </div>
+                <h4 class="bodyText">Send us a message</h4>
+                <form class="contactForm bodyText" action="index.html" method="post">
+                  <div class="contactcolumn2">
+                    <label class="formTitle" for="firstName">Full Name</label><br>
+                    <input class="content border" type="text" name="Full-Name" required><br>
+
+                    <label class="formTitle" for="email">Email</label><br>
+                    <input class="content border" type="text" name="Email" required><br>
+
+                    <label class="formTitle" for="textarea">Your Message</label><br>
+                    <textarea class="content border" rows="8" cols="40"></textarea><br>
+                </div>
+
+                <div class="contactColumn3">
+                  <label class="formTitle" for="file">Insert File</label><br>
+                  <input type="file" name="file" value="" multiple><br>
+
+                  <label class="formTitle" for="contactingreason">Why are you contacting us?</label><br>
+                  <ul class="contactReasons">
+                    <li><input type="radio" class="contactReason" name="ContactingReasoning" value="Membership information"><label for="Collborate">Membership information</label></li>
+                    <li><input type="radio" class="contactReason" name="ContactingReasoning" value="Field trip/meeting information"><label for="Question">Field trip/meeting information</label></li>
+                    <li><input type="radio" class="contactReason" name="ContactingReasoning" value="Just saying hi"><label for="Comment">Just saying hi</label></li>
+                    <li><input type="radio" class="contactReason" name="ContactingReasoning" value="Other"><label for="Collborate">Other</label></li><br>
+                  </ul>
+                  <button class="sumbitBtn" type="submit" name="button">Submit</button><br>
+                </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-      <footer class="footer">
-       <div class="copyright"><p>© 2018 Wellington Botanical Society. All Rights Reserved.</p></div>
-     </footer>
+    <footer class="footer">
+     <div class="copyright"><p>© 2018 Wellington Botanical Society. All Rights Reserved.</p></div>
+    </footer>
 
-      <script src="js/jquery-3.3.1.js"></script>
-      <script src="js/script.js"></script>
-    </body>
-  </html>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
