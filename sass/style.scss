@@ -3,6 +3,7 @@ $primaryColor: #517A52;
 $secondaryColor: #FF5109;
 $tertiaryColor: #517A52;
 $quaternaryColor: white;
+$quinaryColor: #C8C8C8;
 
 @mixin mainBtn {
   width: 145px;
@@ -37,10 +38,18 @@ $quaternaryColor: white;
   font-weight: 300;
 }
 
+@mixin border {
+  border: 3px solid $quinaryColor;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .header {
@@ -205,25 +214,25 @@ $quaternaryColor: white;
 /*Our Mission*/
 
 .filler {
-  background-color: white;
+  background-color: $quaternaryColor;
   height: 11vh;
 }
 
 .heading {
   position: relative;
   width: 100vw;
-  height: 20vh;
+  height: 109px;
   margin-bottom: 9%;
   background-color: #629462;
 }
 
 .h2 {
-  padding: 11%;
+  padding: 39px;
   font-family: $mainFont-Family;
   font-weight: 600;
   font-size: 25px;
   text-align: center;
-  color: white;
+  color: $quaternaryColor;
 }
 
 .h3 {
@@ -254,7 +263,7 @@ $quaternaryColor: white;
 
 /*Field Trips*/
 
-.tripMesssage {
+.tripMessage {
   display: none;
 }
 
@@ -282,6 +291,7 @@ $quaternaryColor: white;
   text-decoration: none;
 }
 
+/*Meetings*/
 
 @media only screen and (min-width: 768px) {
 
@@ -291,6 +301,7 @@ $quaternaryColor: white;
 
   .logoSize {
     top: 26%;
+    left: 5%;
     left: 5%;
     width: 241px;
   }
@@ -353,7 +364,7 @@ $quaternaryColor: white;
   }
 
   .homeText {
-    padding: 38px;
+    padding: 36px;
   }
 
   .featureImg2Wrapper {
@@ -377,11 +388,8 @@ $quaternaryColor: white;
 
   /*Our Mission*/
   .heading {
-    height: 12vh;
+    height: 120px;
     margin-bottom: 0;
-  }
-  .h2 {
-    padding: 6%
   }
 
   .imgStaffWrapper {
@@ -404,7 +412,7 @@ $quaternaryColor: white;
   }
 
   /*Field Trips*/
-  .tripMesssage {
+  .message {
     @include message;
     display: block;
     margin: 56px 130px;
@@ -431,25 +439,38 @@ $quaternaryColor: white;
   }
 
   .attendButtonWrapper {
-      margin: 49px 0;
+      margin: 0;
   }
 
 }/*Tablet query ends**/
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1281px) {
 
   .headerBar {
+    height: 109px;
     background-color: $quaternaryColor;
   }
 
   .logoSize {
     top: 33%;
-    left: 42%;
-    width: 14%;
+    left: 43vw;
   }
 
   .logo {
     color: $primaryColor;
+  }
+
+  .filler {
+    height: 165px;
+  }
+
+  .heading {
+    height: 106px;
+  }
+
+  .h2 {
+    font-size: 32px;
+    padding: 31px;
   }
 
   .buttonPosition {
@@ -464,7 +485,6 @@ $quaternaryColor: white;
   .menuItem {
     display: inline-block;
     border: none;
-    // padding: 0;
   }
 
   .menuItemLinkClick{
@@ -487,9 +507,72 @@ $quaternaryColor: white;
   .card {
     width: 826px;
     height: 441px;
-    border: 4px solid grey;
+    border: 4px solid #C8C8C8;
     overflow: auto;
     padding: 27px;
     margin: 26px auto;
   }
+
+  /*Field Trips*/
+  .mainContainer {
+    display: inline-block;
+  }
+
+  .tripsBGImg {
+    background-image: url(../img/observing.png);
+    background-position: right bottom;
+  }
+
+/*Meetings*/
+  .meetingsBGImg {
+    background-image: url(../img/fern-up.png);
+    background-position: center;
+  }
+/*Meetings ends*/
+
+/*Contact Us*/
+  .contactBGImg {
+    background-image: url(../img/rata-leaves.png);
+    background-position: right top;
+  }
+/*Contact Us ends*/
+
+  .leftBGImg {
+    background-size: cover;
+    height: 769px;
+    position: relative;
+  }
+
+  .leftContent {
+    float: left;
+    width: 50vw;
+    height: 769px;
+  }
+
+  .messagePosition {
+    position: absolute;
+    top: 10vw;
+    width: 56%;
+  }
+
+  .message {
+    padding: 42px 8%;
+    margin: 0 21%;
+    color: $quaternaryColor;
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  .messageBorder {
+    @include border;
+  }
+
+  .rightContent {
+    float: right;
+    width: 50vw;
+    margin: 16px 0;
+  }
+
+  /*Contact Us*/
+
 }
