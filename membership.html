@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
@@ -85,40 +85,41 @@
 
           <div class="rightContent">
             <div class="membershipRightContent">
-              <p class="bodyText">To become a member please fill out the form below. Our membership year is 1 July - 30 June. Dues received after 1 May will be credited the following year. If using Internet Banking, please send all amounts owing to 02-0536-0017812 00</p>
+              <p class="bodyText">
+                To become a member please fill out the form below. Our membership year is 1 July - 30 June. Dues received after 1 May will be credited the following year. If using Internet Banking, please send all amounts owing to 02-0536-0017812 00
+              </p>
               <div class="formContainer">
                 <form class="contactForm" action="index.html" method="post">
-                  <label class="formTitle h4" for="firstName">Name</label><br>
-                  <input class="content nameEmailHeight border" type="text" name="Name"><br>
+                  <label class="formTitle h4" for="name">Name</label><br>
+                  <input class="content nameEmailHeight border" type="text" name="name"><br>
 
                   <label class="formTitle h4" for="email">Email</label><br>
-                  <input class="content nameEmailHeight border" type="text" name="Email"><br>
+                  <input class="content nameEmailHeight border" type="text" name="email"><br>
 
-                  <label class="formTitle h4" for="textarea">Select membership type</label><br>
+                  <label class="formTitle h4" for="options">Select membership type</label><br>
                     <select class="content nameEmailHeight border" name="options">
-                        <option value="">Please choose a type</option>
-                        <option value="Ordinary">Ordinary Membership - $35</option>
-                        <option value="Country">Country Membership - $30</option>
-                        <option value="Student">Student Membership - $10</option>
-                        <option value="Group/Family">Group/Family Membership - $40</option>
+                      <option value="Empty">Please choose a type</option>
+                      <option value="Ordinary">Ordinary Membership - $35</option>
+                      <option value="Country">Country Membership - $30</option>
+                      <option value="Student">Student Membership - $10</option>
+                      <option value="Group/Family">Group/Family Membership - $40</option>
                     </select><br>
 
-                  <label class="formTitle h4" for="payment">Method of payment</label><br>
+                  <label class="formTitle h4" for="PaymentMethod">Method of payment</label><br>
                   <ul class="content contactReasons">
                     <li class="formLI"><input type="radio" class="select" name="PaymentMethod" value="Cheque"><label for="Collborate">Cheque</label></li>
                     <li class="formLI"><input type="radio" class="select" name="PaymentMethod" value="Internet Banking"><label for="Question">Internet Banking</label></li>
                     <li class="formLI"><input type="radio" class="select" name="PaymentMethod" value="Other"><label for="Collborate">Other</label></li>
                   </ul>
 
-                  <input type="checkbox" class="select" name="TCs" value="agree">
-                  <label for="TCs">By agreeing, you accept all <span class="tcs">Terms and Conditions</span> of being a member of Wellington Botanical Society</label><br>
+                  <input type="checkbox" class="select" name="tcs" value="agree">
+                  <label for="tcs">By agreeing, you accept all <span class="tcs">Terms and Conditions</span> of being a member of Wellington Botanical Society</label><br>
 
                   <button class="memberSubmit btnPrimary" type="submit" name="button">Submit</button><br>
                 </form>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </main>

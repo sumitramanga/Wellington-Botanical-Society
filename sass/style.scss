@@ -141,7 +141,7 @@ html {
 }
 
 /*Main*/
-/*Feature Content*/
+/*Index*/
 
 .main {
   font-family: $mainFont-Family;
@@ -267,6 +267,10 @@ html {
 }
 
 /*Field Trips*/
+
+.mapBorder {
+  border: 0px;
+}
 
 .tripMessage {
   display: none;

@@ -81,7 +81,7 @@ html {
   padding: 0.7em 4.9em; }
 
 /*Main*/
-/*Feature Content*/
+/*Index*/
 .main {
   font-family: "Open Sans", sans-serif; }
 
@@ -194,6 +194,9 @@ html {
   background-image: url(../img/rata.png); }
 
 /*Field Trips*/
+.mapBorder {
+  border: 0px; }
+
 .tripMessage {
   display: none; }
 
