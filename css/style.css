@@ -217,6 +217,10 @@ html {
   padding: 9px 39px;
   text-decoration: none; }
 
+/*Meetings*/
+.meetingMargin {
+  margin-top: 10px; }
+
 /*Membership*/
 .memberPerks {
   display: none; }
