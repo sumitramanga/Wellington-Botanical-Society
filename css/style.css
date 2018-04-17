@@ -51,6 +51,10 @@ html {
   background-color: transparent;
   border: 2px solid white; }
 
+.btnMenuClicked {
+  color: #517A52;
+  background-color: white; }
+
 /*Nav*/
 .menu {
   display: none;
@@ -78,6 +82,9 @@ html {
 
 /*Main*/
 /*Feature Content*/
+.main {
+  font-family: "Open Sans", sans-serif; }
+
 .backgroundImg {
   background-image: url(../img/leaf-bush.png);
   background-size: cover;
@@ -97,7 +104,6 @@ html {
   width: 80%; }
 
 .rowHeading {
-  font-family: "Open Sans", sans-serif;
   font-size: 26px;
   font-weight: 300;
   text-transform: uppercase;
@@ -160,14 +166,12 @@ html {
 
 .h2 {
   padding: 39px;
-  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 25px;
   text-align: center;
   color: white; }
 
-.h3 {
-  font-family: "Open Sans", sans-serif;
+.memberh3 {
   font-size: 17px; }
 
 .ourMissionH3 {
@@ -187,7 +191,7 @@ html {
 .imgRata {
   background-position: center;
   background-size: cover;
-  background-image: url(../img/Rata.png); }
+  background-image: url(../img/rata.png); }
 
 /*Field Trips*/
 .tripMessage {
@@ -213,14 +217,64 @@ html {
   padding: 9px 39px;
   text-decoration: none; }
 
+/*Membership*/
+.memberPerks {
+  display: none; }
+
+.membershipRightContent {
+  width: 85vw;
+  margin: 0 auto; }
+
+.memberSubmit {
+  margin: 4% 22%; }
+
+.tcs {
+  color: #FF5109;
+  font-weight: 400; }
+
 /*Contact Us*/
+.message {
+  font-size: 17px;
+  font-weight: 300; }
+
+.contact {
+  margin-top: 21px; }
+
+.mailContact {
+  height: 89px; }
+
 .icon {
-  display: inline-block;
+  color: #517A52; }
+
+.mailIconWrapper {
+  height: 97px; }
+
+.mailIconSize {
+  font-size: 30px; }
+
+.emailIconSize {
+  font-size: 29px; }
+
+.phoneIconSize {
+  font-size: 29px; }
+
+.fbIconSize {
   font-size: 35px; }
 
 .contactText {
-  display: inline;
-  text-align: center; }
+  font-size: 16px;
+  float: right;
+  width: 86%;
+  margin: 5px 0px; }
+
+.boldText {
+  font-weight: 500; }
+
+.hrTop {
+  display: none; }
+
+.hr {
+  margin: 30px 0; }
 
 .leftContactContent {
   width: 83vw;
@@ -233,6 +287,47 @@ html {
 .border {
   border: 1px solid black;
   border-radius: 3px; }
+
+.h4 {
+  font-weight: 600; }
+
+.contactForm {
+  margin: 17px 0; }
+
+.content {
+  width: 100%;
+  font-size: 15px;
+  margin: 2% 0 6% 0; }
+
+.nameEmailHeight {
+  height: 30px; }
+
+.messageHeight {
+  height: 150px; }
+
+.fileBtn {
+  padding: 5px 17px;
+  font-size: 13px;
+  color: white;
+  background-color: #FC6919;
+  border: none;
+  border-radius: 2px; }
+
+.titleforplant {
+  float: right;
+  width: 53%; }
+
+.contactReasons {
+  list-style: none; }
+
+.formLI {
+  margin: 9px 0; }
+
+.select {
+  margin-right: 6px; }
+
+.submitBtn {
+  margin: 0 21%; }
 
 @media only screen and (min-width: 768px) {
   .headerBar {
@@ -333,9 +428,6 @@ html {
 
   /*Field Trips*/
   .message {
-    font-family: "Open Sans", sans-serif;
-    font-size: 17px;
-    font-weight: 300;
     display: block;
     margin: 56px 130px; }
 
@@ -356,7 +448,29 @@ html {
     width: 256px; }
 
   .attendButtonWrapper {
-    margin: 0; } }
+    margin: 0; }
+
+  /*Membership*/
+  .memberPerks {
+    display: none; }
+
+  .membershipRightContent {
+    width: 55vw;
+    margin-top: 43px; }
+
+  .memberSubmit {
+    margin: 10% 32%; }
+
+  /*Contact Us*/
+  .hrTop {
+    display: block;
+    width: 50vw; }
+
+  .hrBottom {
+    display: none; }
+
+  .contactFormContainer {
+    float: right; } }
 /*Tablet query ends**/
 @media only screen and (min-width: 1281px) {
   .headerBar {
@@ -427,6 +541,12 @@ html {
 
   /*Meetings ends*/
   /*Contact Us*/
+  .memberBGImg {
+    background-image: url(../img/toetoe.png);
+    background-position: right center; }
+
+  /*Contact Us ends*/
+  /*Contact Us*/
   .contactBGImg {
     background-image: url(../img/rata-leaves.png);
     background-position: right top; }
@@ -462,6 +582,55 @@ html {
     width: 50vw;
     margin: 16px 0; }
 
-  /*Contact Us*/ }
+  /*Membership*/
+  .memberPerks {
+    display: block;
+    text-align: center;
+    padding: 42px 8%;
+    margin: 0 21%;
+    color: white;
+    font-size: 20px;
+    line-height: 36px;
+    position: absolute;
+    top: 1vw;
+    right: 7%;
+    width: 46%; }
+
+  .perksHeading {
+    font-size: 22px; }
+
+  .perk {
+    margin: 43px 0; }
+
+  .memberIcon {
+    font-size: 53px; }
+
+  .memberText {
+    font-size: 18px;
+    font-weight: 300; }
+
+  .membershipRightContent {
+    width: 22vw;
+    margin: 47px auto; }
+
+  .memberSubmit {
+    margin: 10% 32% 0 32%; }
+
+  /*Contact Us*/
+  .contactFormContainer {
+    margin-top: 3%;
+    margin-right: 10%; }
+
+  .waysOfContact {
+    display: inline-block;
+    margin: 20% 0 18% 12%;
+    width: 21vw; }
+
+  .hrTop {
+    display: none; }
+
+  .hrBottom {
+    display: block;
+    width: 300px; } }
 
 /*# sourceMappingURL=style.css.map */

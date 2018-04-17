@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Wellington Botanical Society</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav">
+          <div class="headerBar headerBarBackground">
+            <div class="logoSize">
+              <h1 class="logo">Wellington Botanical Society</h1>
+            </div>
+
+            <div class="buttonPosition">
+              <button type="button" name="button" class="btn btnMenu">Menu</button>
+            </div>
+          </div><!--headerBar-->
+
+          <div class="menuWrapper">
+           <ul class="menu menuSize">
+             <li class="menuItem menuItemSize"><a class="menuItemLink menuItemLinkClick" href="index.html">Home</a></li>
+             <li class="menuItem menuItemSize"><a class="menuItemLink menuItemLinkClick" href="ourMission.html">Our Mission</a></li>
+             <li class="menuItem menuItemSize"><a class="menuItemLink menuItemLinkClick" href="fieldTrips.html">Field Trips</a></li>
+             <li class="menuItem menuItemSize"><a class="menuItemLink menuItemLinkClick" href="meetings.html">Meetings</a></li>
+             <li class="menuItem menuItemSize"><a class="menuItemLink menuItemLinkClick" href="membership.html">Membership</a></li>
+             <li class="menuItem menuItemSize"><a class="menuItemLink menuItemLinkClick" href="contactUs.html">Contact Us</a></li>
+           </ul>
+          </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="mainContainer">
+        <div class="filler"></div>
+
+        <div class="heading memberHeading">
+          <h2 class="h2">Membership</h2>
+        </div>
+
+        <div class="membershipContainer">
+          <div class="leftContent">
+            <div class="memberBGImg leftBGImg" title="Toe Toe">
+              <div class="imgOpacity"></div>
+              <div class="memberPerks">
+                <p class="perksHeading">Membership Perks</p>
+                <div class="perk priorityFirst">
+                  <div class="icon memberIcon starIcon">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <p class="memberText">
+                    <strong class="memberTitle">Priority First</strong><br>
+                    Have priority over visitors when we hold field trips and summer camps
+                  </p>
+                </div>
+
+                <div class="perk withOthera">
+                  <div class="icon memberIcon usersIcons">
+                    <i class="fas fa-users"></i>
+                  </div>
+                  <p class="memberText">
+                    <strong class="memberTitle">Engage with others</strong><br>
+                    Attend our monthly meetings which help towards awards
+                  </p>
+                </div>
+
+                <div class="perk withOthera">
+                  <div class="icon memberIcon usersIcons">
+                    <i class="far fa-file-alt"></i>
+                  </div>
+                  <p class="memberText">
+                    <strong class="memberTitle">Newsletters</strong><br>
+                    Recieve our up ot date triannual newletters including the bulletin
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="rightContent">
+            <div class="membershipRightContent">
+              <p class="bodyText">To become a member please fill out the form below. Our membership year is 1 July - 30 June. Dues received after 1 May will be credited the following year. If using Internet Banking, please send all amounts owing to 02-0536-0017812 00</p>
+              <div class="formContainer">
+                <form class="contactForm" action="index.html" method="post">
+                  <label class="formTitle h4" for="firstName">Name</label><br>
+                  <input class="content nameEmailHeight border" type="text" name="Name"><br>
+
+                  <label class="formTitle h4" for="email">Email</label><br>
+                  <input class="content nameEmailHeight border" type="text" name="Email"><br>
+
+                  <label class="formTitle h4" for="textarea">Select membership type</label><br>
+                    <select class="content nameEmailHeight" name="options">
+                        <option value="">Please choose a type</option>
+                        <option value="Ordinary">Ordinary Membership - $35</option>
+                        <option value="Country">Country Membership - $30</option>
+                        <option value="Student">Student Membership - $10</option>
+                        <option value="Group/Family">Group/Family Membership - $40</option>
+                    </select><br>
+
+                  <label class="formTitle h4" for="payment">Method of payment</label><br>
+                  <ul class="content contactReasons">
+                    <li class="formLI"><input type="radio" class="select" name="PaymentMethod" value="Cheque"><label for="Collborate">Cheque</label></li>
+                    <li class="formLI"><input type="radio" class="select" name="PaymentMethod" value="Internet Banking"><label for="Question">Internet Banking</label></li>
+                    <li class="formLI"><input type="radio" class="select" name="PaymentMethod" value="Other"><label for="Collborate">Other</label></li>
+                  </ul>
+
+                  <input type="checkbox" class="select" name="TCs" value="agree">
+                  <label for="TCs">By agreeing, you accept all <span class="tcs">Terms and Conditions</span> of being a member of Wellington Botanical Society</label><br>
+
+                  <button class="memberSubmit btnPrimary" type="submit" name="button">Submit</button><br>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+     <div class="copyright"><p>© 2018 Wellington Botanical Society. All Rights Reserved.</p></div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

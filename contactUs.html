@@ -45,89 +45,98 @@
         </div>
 
         <div class="contactContainer">
-          <div class="leftContactContent leftContent contactMessageWrapper">
-            <div class="contactBGImg leftBGImg" title="Rata Tree">
-              <div class="imgOpacity"></div>
-              <div class="message messagePosition messageBorder">
-                <p class="bodyText">If you would like any help on identifying plants or have any general enquiries in regards to upcoming meetings and field trips, membership information, award information or anything else please feel free to contact us. To stay up to date with Wellington Botanical Society and chat among the community with others join our Facebook group full of diverse inidividuals!</p>
+
+            <div class="leftContactContent leftContent">
+              <div class="contactBGImg leftBGImg" title="Rata Tree">
+                <div class="imgOpacity"></div>
+                <div class="message messagePosition messageBorder">
+                  <p>If you would like any help on identifying plants or have any general enquiries in regards to upcoming meetings and field trips, membership information, award information or anything else please feel free to contact us. To stay up to date with Wellington Botanical Society and chat among the community with others join our Facebook group full of diverse inidividuals!</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="rightContactContent rightContent">
-            <div class="waysOfContact">
-              <div class="contact mailContact">
-                <div class="icon mailIconWrapper">
-                  <i class="fas fa-envelope"></i>
+            <hr class=" hr hrTop">
+
+            <div class="rightContactContent rightContent">
+              <div class="waysOfContact">
+                <div class="contact mailContact">
+                  <span class="icon mailIconSize">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <p class= "contactText boldText">
+                    <strong>Wellington Botanical Society</strong><br>
+                    PO Box 10-412<br>
+                    Wellington 6143<br>
+                    New Zealand<br>
+                  </p>
                 </div>
-                <p class= "bodyText contactText">
-                  <strong>Wellington Botanical Society</strong><br>
-                  PO Box 10-412<br>
-                  Wellington 6143<br>
-                  New Zealand<br>
-                </p>
+
+                <div class="contact emailContact">
+                  <span class="icon emailIconSize">
+                    <i class="fas fa-at"></i>
+                  </span>
+                  <p class="contactText boldText">
+                    rockwren19@gmail.com
+                  </p>
+                </div>
+
+                <div class="contact phoneContact">
+                  <span class="icon phoneIconSize">
+                    <i class="fas fa-phone fa-flip-horizontal"></i>
+                  </span>
+                  <p class="contactText boldText">
+                    021 112 8841
+                  </p>
+                </div>
+
+                <div class="contact fbContact">
+                  <span class="icon fbIconSize">
+                    <i class="fab fa-facebook"></i>
+                  </span>
+                  <p class="contactText boldText">
+                    Wild Plants of Wellington
+                  </p>
+                </div>
+
+                <hr class=" hr hrBottom">
               </div>
 
-              <div class="contact emailContact">
-                <div class="icon emailIconWrapper">
-                  <i class="fas fa-at"></i>
-                </div>
-                <p class="bodyText contactText">
-                  rockwren19@gmail.com
-                </p>
-              </div>
 
-              <div class="contact phoneContact">
-                <div class="icon phoneIconWrapper">
-                  <i class="fas fa-phone fa-flip-horizontal"></i>
-                </div>
-                <p class="bodyText contactText">
-                  021 112 8841
-                </p>
-              </div>
-
-              <div class="contact fbContact">
-                <div class="icon">
-                  <i class="fab fa-facebook"></i>
-                </div>
-                <p class="bodyText contactText">
-                  Wild Plants of Wellington
-                </p>
-              </div>
-
-              <hr>
-            </div>
-
-            <div class="floatRightTrips">
-                <h4 class="bodyText">Send us a message</h4>
+              <div class="contactFormContainer">
+                <h3 class="h3">Send us a message</h3>
                 <form class="contactForm bodyText" action="index.html" method="post">
-                  <div class="contactcolumn2">
-                    <label class="formTitle" for="firstName">Full Name</label><br>
-                    <input class="content border" type="text" name="Full-Name" required><br>
+                  <!-- <div class="contactcolumn2"> -->
+                    <label class="formTitle h4" for="firstName">Name</label><br>
+                    <input class="content nameEmailHeight border" type="text" name="Name"><br>
 
-                    <label class="formTitle" for="email">Email</label><br>
-                    <input class="content border" type="text" name="Email" required><br>
+                    <label class="formTitle h4" for="email">Email</label><br>
+                    <input class="content nameEmailHeight border" type="text" name="Email"><br>
 
-                    <label class="formTitle" for="textarea">Your Message</label><br>
-                    <textarea class="content border" rows="8" cols="40"></textarea><br>
-                </div>
+                    <label class="formTitle h4" for="textarea">Your Message</label><br>
+                    <textarea class="content messageHeight border" rows="8" cols="40"></textarea><br>
+                  <!-- </div> -->
 
-                <div class="contactColumn3">
-                  <label class="formTitle" for="file">Insert File</label><br>
-                  <input type="file" name="file" value="" multiple><br>
+                  <!-- <div class="contactColumn3"> -->
+                    <label class="formTitle h4" for="file">Insert File</label><br>
 
-                  <label class="formTitle" for="contactingreason">Why are you contacting us?</label><br>
-                  <ul class="contactReasons">
-                    <li><input type="radio" class="contactReason" name="ContactingReasoning" value="Membership information"><label for="Collborate">Membership information</label></li>
-                    <li><input type="radio" class="contactReason" name="ContactingReasoning" value="Field trip/meeting information"><label for="Question">Field trip/meeting information</label></li>
-                    <li><input type="radio" class="contactReason" name="ContactingReasoning" value="Just saying hi"><label for="Comment">Just saying hi</label></li>
-                    <li><input type="radio" class="contactReason" name="ContactingReasoning" value="Other"><label for="Collborate">Other</label></li><br>
-                  </ul>
-                  <button class="sumbitBtn" type="submit" name="button">Submit</button><br>
-                </div>
-              </form>
+                    <div class="fileWrapper content contentMargin">
+                      <button class="fileBtn" name="button">Choose files</button>
+                      <p class="titleforplant">Plant.jpeg</p><br>
+                    </div>
+
+                    <label class="formTitle h4" for="contactingreason">How can we help?</label><br>
+                    <ul class="content contactReasons">
+                      <li class="formLI"><input type="radio" class="select" name="ContactingReasoning" value="Membership information"><label for="Collborate">Membership information</label></li>
+                      <li class="formLI"><input type="radio" class="select" name="ContactingReasoning" value="Field trip/meeting information"><label for="Question">Field trip/meeting information</label></li>
+                      <li class="formLI"><input type="radio" class="select" name="ContactingReasoning" value="Just saying hi :)"><label for="Comment">Just saying hi</label></li>
+                      <li class="formLI"><input type="radio" class="select" name="ContactingReasoning" value="Other"><label for="Collborate">Other</label></li>
+                    </ul>
+                    <button class="submitBtn btnPrimary" type="submit" name="button">Submit</button><br>
+                  <!-- </div> -->
+                </form>
+              </div>
             </div>
-          </div>
+
         </div>
       </div>
     </main>
