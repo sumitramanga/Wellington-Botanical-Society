@@ -244,6 +244,11 @@ html {
   font-size: 17px;
   font-weight: 300; }
 
+.contactMessage {
+  width: 85vw;
+  margin-left: auto;
+  margin-right: auto; }
+
 .contact {
   margin-top: 21px; }
 
@@ -334,7 +339,7 @@ html {
   margin-right: 6px; }
 
 .submitBtn {
-  margin: 0 21%; }
+  margin: 0 23%; }
 
 @media only screen and (min-width: 768px) {
   .headerBar {
@@ -469,15 +474,38 @@ html {
     margin: 10% 32%; }
 
   /*Contact Us*/
+  .message {
+    width: auto; }
+
   .hrTop {
     display: block;
-    width: 50vw; }
+    width: 84vw;
+    margin-left: auto;
+    margin-right: auto; }
 
   .hrBottom {
     display: none; }
 
   .contactFormContainer {
-    float: right; } }
+    float: right; }
+
+  .contact {
+    width: 49%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  .contactText {
+    width: 76%; }
+
+  .contactFooter {
+    clear: both; }
+
+  .contactFormContainer {
+    float: none;
+    margin: 49px 0; }
+
+  .submitBtn {
+    margin: 0 37%; } }
 /*Tablet query ends**/
 @media only screen and (min-width: 1281px) {
   .headerBar {
@@ -547,12 +575,12 @@ html {
     background-position: center; }
 
   /*Meetings ends*/
-  /*Contact Us*/
+  /*Membership */
   .memberBGImg {
     background-image: url(../img/toetoe.png);
     background-position: right center; }
 
-  /*Contact Us ends*/
+  /*Membership ends*/
   /*Contact Us*/
   .contactBGImg {
     background-image: url(../img/rata-leaves.png);
@@ -624,20 +652,32 @@ html {
     margin: 10% 32% 0 32%; }
 
   /*Contact Us*/
+  .rightContactContent {
+    margin: 0; }
+
+  .contact {
+    width: 300px; }
+
+  .contactText {
+    width: 232px; }
+
   .contactFormContainer {
+    float: right;
     margin-top: 3%;
-    margin-right: 10%; }
+    margin-right: 10%;
+    margin-bottom: 0;
+    width: 40%; }
 
   .waysOfContact {
     display: inline-block;
-    margin: 20% 0 18% 12%;
+    margin: 20% 0 0 5%;
     width: 21vw; }
 
   .hrTop {
     display: none; }
 
   .hrBottom {
-    display: block;
+    display: none;
     width: 300px; } }
 
 /*# sourceMappingURL=style.css.map */

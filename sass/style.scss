@@ -332,6 +332,12 @@ html {
   @include message;
 }
 
+.contactMessage {
+	width: 85vw;
+    margin-left: auto;
+	margin-right: auto;
+}
+
 .contact {
   margin-top: 21px;
 }
@@ -447,7 +453,7 @@ html {
 }
 
 .submitBtn {
-  margin: 0 21%;
+  margin: 0 23%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -615,9 +621,15 @@ html {
 
   /*Contact Us*/
 
+  .message {
+	width: auto;
+  }
+
   .hrTop {
     display: block;
-    width: 50vw;
+    width: 84vw;
+	margin-left: auto;
+	margin-right: auto;
   }
 
   .hrBottom {
@@ -626,6 +638,29 @@ html {
 
   .contactFormContainer {
     float: right;
+  }
+
+  .contact {
+	width: 49%;
+  	margin-left: auto;
+  	margin-right: auto;
+  }
+
+  .contactText {
+	width: 76%;
+  }
+
+  .contactFooter {
+	clear:both;
+  }
+
+  .contactFormContainer {
+	float: none;
+	margin: 49px 0;
+  }
+
+  .submitBtn {
+	margin: 0 37%;
   }
 
 }/*Tablet query ends**/
@@ -716,12 +751,12 @@ html {
   }
 /*Meetings ends*/
 
-/*Contact Us*/
+/*Membership */
   .memberBGImg {
     background-image: url(../img/toetoe.png);
     background-position: right center;
   }
-/*Contact Us ends*/
+/*Membership ends*/
 
 /*Contact Us*/
   .contactBGImg {
@@ -810,15 +845,28 @@ html {
   }
 
   /*Contact Us*/
+  .rightContactContent {
+	  margin: 0;
+  }
+
+	.contact {
+		width: 300px;
+	}
+	.contactText {
+		width: 232px;
+	}
 
   .contactFormContainer {
+	float: right;
     margin-top: 3%;
     margin-right: 10%;
+	margin-bottom: 0;
+    width: 40%;
   }
 
   .waysOfContact {
     display: inline-block;
-    margin: 20% 0 18% 12%;
+    margin: 20% 0 0 5%;
     width: 21vw;
   }
 
@@ -827,7 +875,7 @@ html {
   }
 
   .hrBottom {
-    display: block;
+    display: none;
     width: 300px;
   }
 }
